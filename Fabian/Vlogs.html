@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- META DESCRIPTIONS -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Fabian Andiel">
+	<meta name="description"  content="A general guide on the use of meta tags in html pages">
+	
+<!-- IMPORT OF THE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	
+
+	
+
+<!-- ADDING STYLE SHEET -->
+
+<link rel="stylesheet" type="text/css" href="styleVlogs.css">
+
+<style type="text/css">
+
+
+</style>
+
+	<title> Vlogs</title>
+
+	<title></title>
+</head>
+<body>
+
+	<div id="fb-root"></div>
+
+	
+
+	<header>
+		<div id="headerContainer">My Vlogs</div>
+	</header>
+	
+	<div id="navbar">
+			     <div class="navbar-item"><a href="myProjects.html">MY PROJECTS</a></div>
+			     <div class="navbar-item"><a href="AboutMe.html">ABOUT ME</a></div>
+			     <div class="navbar-item"><a href="Vlogs.html">VLOGS</a></div>
+			     <div class="navbar-item"><a href="https://www.genickbruch.com/">CONTACT</a></div>
+	</div>
+	
+	
+	<!-- <button id="widthMeasurer" onclick="screanMeasurer()"> Bildschirm weiter </button> -->
+	<main>
+		<div id="main-line1">
+			
+			<div id="hero-image-container">
+				
+			</div>
+		</div>
+
+		<div id="main-line2">
+
+		    <div class="card">
+		      <div class="thumb"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDAFMannXXL%2Fvideos%2Fpcb.10216851950444307%2F10216851782320104%2F%3Ftype%3D3%26theater&width=300&show_text=false&height=168&appId" width="300" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe></div>
+		      <article>
+		        <h1 id="subheading0">How to Conduct Remote Usability Testing</h1>
+		        <span id="subtext0">Harry Brignull</span>
+		      </article>
+		    </div>
+  
+  			<div class="card cardResponsive">
+		      <div class="thumb"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDAFMannXXL%2Fvideos%2Fpcb.10216742732033915%2F10216742621951163%2F%3Ftype%3D3%26theater&width=300&show_text=false&height=168&appId" width="300" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe></div>
+		      <article>
+		        <h1 id="subheading1">How to Conduct Remote Usability Testing</h1>
+		        <span id="subtext1">Harry Brignull</span>
+		      </article>
+		    </div>
+
+
+		    <div class="card cardResponsive">
+		      <div class="thumb"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDAFMannXXL%2Fvideos%2F10216682597250583%2F&width=300&show_text=false&height=168&appId" width="300" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe></div>
+		      <article>
+		        <h1 id="subheading2">How to Conduct Remote Usability Testing</h1>
+		        <span id="subtext2">Harry Brignull</span>
+		      </article>
+		    </div>
+
+		    <div class="card cardResponsive">
+		      <div class="thumb"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDAFMannXXL%2Fvideos%2Fpcb.10216742732033915%2F10216742658752083%2F%3Ftype%3D3%26theater&width=300&show_text=false&height=168&appId" width="300" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe></div>
+		      <article>
+		        <h1 id="subheading3">How to Conduct Remote Usability Testing</h1>
+		        <span id="subtext3">Harry Brignull</span>
+		      </article>
+		    </div>
+
+
+
+		</div>
+	</main>
+
+	<!-- LOADS external JSON File -->
+	<script type="text/javascript"  src="dataFabian.json"></script>
+
+	<script>
+		   var mydata = JSON.parse(events);
+
+			// Loop for headers		   	
+		   	for (i=0; i<mydata.length;i++) {
+		   		document.getElementById("subheading"+i).innerHTML = mydata[i].title;
+		   		document.getElementById("subtext"+i).innerHTML = mydata[i].description;
+		   	}
+
+
+	function screanMeasurer() {
+			alert(window.innerWidth);
+		};	 
+
+
+
+
+	</script>
+</body>
+</html>

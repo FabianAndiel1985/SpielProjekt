@@ -1,0 +1,19 @@
+    events = `[
+    {
+       "title": "Radrettung die erste",
+       "description": "Radrettung mit stabilem Team im 4ten"
+   }, {
+
+       "title": "Radrettung die zweite",
+       "description": "Radrettung auf der Mariahilferstrasse"
+
+   }, {
+
+      "title": "Radrettung die dritte",
+      "description": "Radrettung mit BV-Stv. Michi Reichelt"
+
+   }, {
+      "title": "Radrettung die vierte",
+      "description": "Radrettung in 1060"
+   }]`
+

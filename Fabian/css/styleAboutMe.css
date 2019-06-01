@@ -1,0 +1,129 @@
+@media screen and (max-width: 600px) {
+  body #navbar {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; }
+  body main {
+    margin-top: 80px; }
+    body main #main-line0 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+      margin-top: -200px;
+      height: 2%; }
+      body main #main-line0 blockquote.bubble {
+        margin-left: 105px; }
+      body main #main-line0 blockquote.speech {
+        background: none;
+        width: 300px;
+        font-size: 30px;
+        font-style: italic; }
+        body main #main-line0 blockquote.speech #quoteOrigin {
+          margin-top: 7px;
+          display: block;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: bold; }
+    body main #main-line1 {
+      margin: 20px;
+      flex-direction: column;
+      align-items: center; }
+      body main #main-line1 #card-Fabian-vita-container {
+        display: flex;
+        justify-content: center; }
+        body main #main-line1 #card-Fabian-vita-container .card-Fabian-vita {
+          box-shadow: 100px 35px 30px 0 rgba(0, 0, 0, 0.3);
+          max-width: 227px;
+          border-radius: 5px;
+          margin-bottom: 70px;
+          border: 1px solid black;
+          margin-left: 50px; } }
+@media screen and (min-width: 601px) and (max-width: 930px) {
+  main #main-line0 {
+    display: flex;
+    justify-content: center; }
+    main #main-line0 blockquote.bubble {
+      margin-left: 270px; }
+    main #main-line0 blockquote.speech {
+      background: none;
+      font-size: 30px;
+      font-style: italic; }
+      main #main-line0 blockquote.speech #quoteOrigin {
+        margin-top: 7px;
+        display: block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold; }
+  main #main-line1 {
+    margin: 20px;
+    flex-direction: column;
+    align-items: center; }
+    main #main-line1 #card-Fabian-vita-container {
+      display: flex;
+      justify-content: center;
+      margin-left: 50px; }
+      main #main-line1 #card-Fabian-vita-container .card-Fabian-vita {
+        box-shadow: 100px 35px 30px 0 rgba(0, 0, 0, 0.3);
+        max-width: 227px;
+        border-radius: 5px;
+        margin-bottom: 70px;
+        border: 1px solid black; } }
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px; }
+  header #headerContainer:hover {
+    transform: rotate(360deg);
+    transition: 3s; }
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  font-size: 30px;
+  height: 30px;
+  margin-top: 40px; }
+  #navbar .navbar-item a {
+    text-decoration: none; }
+
+main {
+  margin-top: -160px; }
+  main #main-line0 blockquote.bubble {
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 50% 50%;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    left: -40px;
+    top: 200px; }
+  main #main-line0 blockquote.speech {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+    width: 700px;
+    font-size: 30px;
+    padding-top: 8%;
+    padding-bottom: 20%; }
+    main #main-line0 blockquote.speech #quoteOrigin {
+      display: none; }
+  main #main-line1 {
+    display: flex;
+    justify-content: space-between; }
+    main #main-line1 .card-Fabian {
+      box-shadow: 100px 35px 30px 0 rgba(0, 0, 0, 0.3);
+      width: 250px;
+      border-radius: 5px;
+      margin-bottom: 70px; }
+    main #main-line1 #card-Fabian-vita-container {
+      width: 60%;
+      margin-right: 70px; }
+      main #main-line1 #card-Fabian-vita-container .card-Fabian-vita {
+        width: 80%;
+        box-shadow: 100px 35px 30px 0 rgba(0, 0, 0, 0.3);
+        width: 750px;
+        border-radius: 5px;
+        margin-bottom: 70px;
+        border: 1px solid black; }
+
+/*# sourceMappingURL=styleAboutMe.css.map */

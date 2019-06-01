@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- JQUERY EMBEDDING,tested -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- CSS EMBEDDING,tested -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+
+
+
+		<!-- <img src='workoutroom.jpg' id='workoutroom'> <img src='magican.jpg' id='magican'> <p>Now you can workout!! <span id='showpPoints'>You have 20 points to distribute </span></p> <button id='power'> Power </button> <br> <br> <button id='endurance'> Endurance</button> <br> <br> <button id='lives'> Yoga</button> -->
+
+
+
+
+
+
+
+
+	<div id="Sc4">
+		
+		<img src="workoutroom.jpg" id="workoutroom">
+		<img src="magican.jpg" id="magican">
+
+		<p>Now you can workout!! <span id="showpPoints">You have 20 points to distribute </span></p>
+
+		<button id="power"> Power </button> <br> <br>
+		<button id="endurance"> Endurance</button> <br> <br>
+		<button id="lives"> Yoga</button>
+		
+	</div>
+
+
+	<script type="text/javascript">
+		
+		var workoutPoints = 20;
+
+		$("#power").click(function() { 
+			if (workoutPoints>0) 
+				{
+					workoutPoints = workoutPoints-5; 
+					document.getElementById("showpPoints").innerHTML="You have " + workoutPoints + " points to distribute";
+				} else { 
+					alert("you have already trained enough");
+				}
+			}
+		)
+		
+		
+
+		$("#endurance").click(function() { 
+			if (workoutPoints>0) 
+				{
+					workoutPoints = workoutPoints-5; 
+					document.getElementById("showpPoints").innerHTML="You have " + workoutPoints + " points to distribute";
+				} else { 
+					alert("you have already trained enough");
+				}
+			}
+		)		
+
+
+
+		$("#lives").click(function() { 
+			if (x>0) 
+				{
+					x = x-5; 
+					document.getElementById("showpPoints").innerHTML="You have " + x + " points to distribute";
+				} else { 
+					alert("you have already trained enough");
+				}
+			}
+		)
+
+
+
+	</script>
+
+</body>
+</html>

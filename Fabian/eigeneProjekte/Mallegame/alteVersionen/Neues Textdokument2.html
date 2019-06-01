@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- JQUERY EMBEDDING,tested -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- CSS EMBEDDING,tested -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+
+	<div id="contentSc4">
+		<p> You get to a fork in the road and have to choose ....</p>
+
+		<img src="ForkRoad.jpg"> <br><br>
+
+		<button id="Sc4Sc5"> Gehe zum Traingsraum</button> <br><br>
+		<button id="Sc4Sc6"> Gehe gleich weiter zum Gegner (wer braucht schon Training)
+		</button>
+
+	</div>
+
+<!-- 	<div id='contentSc4'> <p> You get to a fork in the road and have to choose ....</p> <img src='ForkRoad.jpg'> <br><br> <button id='Sc4Sc5'> Gehe zum Traingsraum</button> <br><br> <button id='Sc4Sc6'> Gehe gleich weiter zum Gegner (wer braucht schon Training) </button> </div>
+ -->
+	
+
+
+
+
+
+
+		<script type="text/javascript">
+			
+			// Function for change to scene5
+
+			document.getElementById("Sc4Sc5").onclick = function() {
+				Sc4Sc5();
+			}
+			
+			// Function for immmediate change to scene6
+
+			document.getElementById("Sc4Sc6").onclick=function () {
+				Sc4Sc6();
+			}
+			
+			// real scene 5
+			
+			function Sc4Sc5(){
+				alert("Hallo1");
+				// Hier kommt die 5.te Trainingsraumszene rein
+			}
+			// real scene 6
+
+			function Sc4Sc6(){
+				alert("Hallo2");
+				// Hier kommt die 5.te Trainingsraumszene rein
+			}
+
+
+
+
+
+		</script>
+
+
+</body>
+</html>

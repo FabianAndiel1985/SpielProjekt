@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title></title>
+</head>
+<body>
+
+	<img src="Malle.jpg">
+	<p>You meet some drunk funny germans!</p>
+	<br>
+	<button id="talk1Sc2"> Talk to them </button>
+	<br> 
+	<br> 
+	<button id="talk2Sc2"> Listen to their song </button>
+
+
+	
+	<script type="text/javascript">
+
+		document.getElementById("talk1Sc2").onclick= function () {
+				function talkin() {
+					alert("Yo Bro");	
+				};
+				return talkin();	
+				};
+
+
+
+		$("#talk2Sc2").click(function () {
+			var i = 7;
+			do {
+				alert(i +" beer in the closet");
+				i--;
+
+				if (i === 0) {
+					alert("No beer here anymore");
+					break;
+				}
+			}
+
+			while (i > -1);
+		});
+			
+
+	</script>
+
+</body>
+</html>
+

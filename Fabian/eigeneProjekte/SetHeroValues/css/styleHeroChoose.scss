@@ -1,0 +1,76 @@
+header {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+
+
+nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+main {
+	display:flex;
+	justify-content: center;
+	#pointsDistributionContainer {
+		display:flex;
+		justify-content: center;
+
+
+
+		height:200px;
+		width:50%;
+		// border:2px solid black;
+
+		#text-container {
+			display: flex; 
+			justify-content: flex-end;
+			width:50%;
+			// border:2px solid green;
+			ul{
+				list-style-type: none;
+				li {
+					height:36.95px;
+					margin:8px;
+				}
+			}
+		}
+
+		#points-container {
+			width:50%;
+			// border:2px solid green;
+			ul{
+				list-style-type: none;
+				li {
+					margin:8px;
+					
+				}
+			}
+		}
+
+	} /*Ending big container in main*/
+
+} /*Endning Main*/
+
+
+
+section {
+	margin-top:20px;
+	
+	#section-line1 {
+		display:flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		
+	}
+	
+	#section-line2 {
+		display:flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top:20px;
+	}
+
+}/*Endning Section*/

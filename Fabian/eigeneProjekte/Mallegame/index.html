@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<!-- JQUERY EMBEDDING,tested -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- CSS EMBEDDING,tested -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+	<!-- JAVASCRIPT EMBEDDING,tested  -->
+	<script language="javascript" type="text/javascript" src="javas.js"></script>.
+
+
+
+	<title></title>
+</head>
+<body>
+
+	<div id="allContent">
+
+		<h1>Create your hero</h1>
+
+		Your hero`s name <input type="text" name="name" id="heroName" >
+		Your hero`s power <input type="number" name="power" id="heroPower">
+		Your hero`s endurance <input type="number" name="endurance" id="heroEndurance">
+		Your hero`s lives <input type="number" name="lives" id="heroLives">
+
+		<button onclick="test()"> Create </button>
+		<br>
+		<br>
+		<br>
+		<button id="Sc1Sc2"> Go on  </button>
+
+	</div>
+
+	<script type="text/javascript">
+
+		// Control variable of the menue
+
+		var x=0;
+
+		// Hero object constructor
+
+		function Hero(name, power, endurance, lives, workedout) {
+  			this.name = name;
+  			this.power = power;
+  			this.endurance = endurance;
+  			this.lives = lives;
+  			this.workedout = workedout;
+		}
+
+		// Create the hero function; takes the values from the players entries except for workedout;
+
+		function test() {
+			var name1 = $("#heroName").val();
+		 	var power1 = parseInt(document.getElementById("heroPower").value);
+		 	var endurance1 = parseInt($("#heroEndurance").val());
+		 	var lives1 = parseInt(document.getElementById("heroLives").value);
+		 	var workedout1 = false;
+
+		 // Check if there`s a string in hero name
+
+		 	switch (isNaN(name1) || parseInt(name1) )
+		 	{
+		 		case true: 
+		 		z = 1;
+		 		break;
+		 		default:
+		 		alert("Bitte gib einen Namen ein");
+		 		break;
+		 	}
+
+		 	mainCharacter = new Hero(name1,power1,endurance1,lives1,workedout1);
+
+		 	if (z == 1) {
+		 	alert("His name is " + mainCharacter.name + " his power is " + mainCharacter.power + " his endurance is " + mainCharacter.endurance + " and his lives are " + mainCharacter.lives);
+		 	x = 7;
+		 	return x;
+		 	return mainCharacter;
+		 	}
+
+		};
+
+		// Change Scene 1 to Scene 2 function changes either to scene 2 or stays with scene 1 if x remains 0
+
+		document.getElementById("Sc1Sc2").onclick = function () {
+		if (x==7){$("#allContent").html("<img src='Malle.jpg'> <p>You meet some drunk funny germans!</p><br><button id='talk1Sc2'> Talk to them </button><br> <br> <button id='talk2Sc2'> Listen to their song </button><br><br> <button id='walk1Sc2'> Continue your path</button>"); 
+			// Controll variables scene 2
+			var x1 = 0; var y1 = 0;
+
+			// Sc2 Talk to the germans
+			document.getElementById("talk1Sc2").onclick = function() {
+				alert("Ey Dude"); 
+				x1 = 1; 
+				return x1
+			};
+			// SC 2 Germans sing drunken
+			document.getElementById("talk2Sc2").onclick = function() { 
+				var i = 7;
+				do {
+				alert(i +" beer in the closet");
+				i--;
+				if (i === 0) {
+					alert("No beer here anymore");
+					y1 = 1;
+					return y1;
+					break;
+					}
+				}
+				while (i > -1);
+			};
+
+			// Change SC2 to Sc3 !!!!
+			document.getElementById("walk1Sc2").onclick= function() {
+				if (x1 == 1 && y1 == 1) {
+					document.getElementById("allContent").innerHTML="<div id='mystery'> <img src='mystery.png' id='mystery1' > </div> <p> Guess a number I`m thinking of between 1 and 3</p>"; document.getElementById("mystery1").onmouseover = function() {
+							var choice = prompt("Insert your guess here");
+							var min=1; 
+							var max=3;
+							var randomNumber = Math.floor(Math.random() * (+max - +min)) + + min;
+							if ( randomNumber == choice) {
+								alert("Alright, you shall pass!");
+								Sc3Sc4();
+							}
+
+							else {
+								alert("Try again");
+							}
+
+						;}
+				}
+
+
+				else if (x1 == 0 && y1 == 0) {
+					alert("Just talk to them!");
+				}
+
+				}
+		}
+		else if (x == 0) {
+			alert("Please create your hero");
+		}
+	}
+
+
+	// Launch Scene 4 with a function
+
+	function Sc3Sc4 () {
+		// here comes scene 4
+		document.getElementById("allContent").innerHTML="	<div id='contentSc4'> <p> You get to a fork in the road and have to choose ....</p> <img src='ForkRoad.jpg'> <br><br> <button id='Sc4Sc5'> Gehe zum Traingsraum</button> <br><br> <button id='Sc4Sc6'> Gehe gleich weiter zum Gegner (wer braucht schon Training) </button> </div>"; document.getElementById("Sc4Sc5").onclick = function() {Sc4Sc5();}; document.getElementById("Sc4Sc6").onclick = function() {Sc4Sc6();}
+		}
+
+	// switch from scene 4 to scene 5 with workout function			
+
+	function Sc4Sc5(){
+				document.getElementById("allContent").innerHTML="<div id='sc5container'> <img src='workoutroom.jpg' id='workoutroom'> <img src='magican.jpg' id='magican'> <p>Now you can workout!! <span id='showpPoints'>You have 20 points to distribute </span></p> <button id='power'> Power </button> <br> <br> <button id='endurance'> Endurance</button> <br> <br> <button id='lives'> Yoga</button> <br><br><br><br> <button id='sc5sc6'>Proceed</button> </div>"; var workoutPoints = 20;
+
+					// Scene5 function to increase power		 
+
+					$("#power").click(function() {
+						if (workoutPoints>0) 
+						{
+						workoutPoints = workoutPoints-5;
+						mainCharacter.power = mainCharacter.power +5;  
+						document.getElementById("showpPoints").innerHTML="You have " + workoutPoints + " points to distribute";
+						mainCharacter.workedout = true;
+					}
+						else { 
+						alert("you have already trained enough");
+						};
+					}
+			
+				);		
+			
+
+					// Scene5 function to increase endurance
+
+				$("#endurance").click(function() { 
+					if (workoutPoints>0) 
+					{
+					workoutPoints = workoutPoints-5; 
+					mainCharacter.endurance = mainCharacter.endurance +5;
+					document.getElementById("showpPoints").innerHTML="You have " + workoutPoints + " points to distribute";
+					mainCharacter.workedout = true;
+					} else { 
+					alert("you have already trained enough");
+					}
+				}
+			);
+
+
+				// Scene5 function to increase lives
+			$("#lives").click(function() { 
+				if (workoutPoints>0) 
+					{
+						workoutPoints = workoutPoints-5; 
+						mainCharacter.lives = mainCharacter.lives +5;
+						document.getElementById("showpPoints").innerHTML="You have " + workoutPoints + " points to distribute";
+						mainCharacter.workedout = true;
+					} else { 
+						alert("you have already trained enough");
+					}
+				}
+			);	
+
+			// switch from scene 5 to scene 6
+			
+			$("#sc5sc6").click( function() {
+				if (workoutPoints>0) {
+					alert("Wait you have to still work out");
+				}
+
+				else {
+					Sc4Sc6();
+				}
+
+			});
+			};
+
+		
+
+			
+
+
+	// ending scene 5
+
+	// immediate switch from scene 4 to scene 6 without work out
+	// general function scene6	
+
+		function Sc4Sc6(){
+					document.getElementById("allContent").innerHTML="<div id='sc6container'> <img src='opponent.jpg' id='Sc6opponent'> <br> <br> <button id='sc6button1'> Fight!!!! </button> </div>"; $("#sc6button1").click(function(){
+							if (mainCharacter.workedout == true) {
+								alert("Okay you shall pass");
+							}
+							// lives dedection if not workedout until GAME OVER + return to scene 4
+							else if (mainCharacter.workedout == false)
+								{
+									if (mainCharacter.lives > 0 ) {
+									mainCharacter.lives = mainCharacter.lives - 1;
+									alert("Du hast zu wenig trainiert! Jetzt hast du nur noch " + mainCharacter.lives +" Leben");
+									Sc3Sc4(); }
+
+									else {
+										alert("GAME OVER");
+										window.close();
+									}
+
+								}
+
+						;})
+
+
+					
+					// CONTINUE HERE; MAKE WINDOW.CLOSE GAMEOVER IN REFERENCE TO sc6button1!!!
+				};
+
+
+
+
+
+	</script>
+
+</body>
+</html>

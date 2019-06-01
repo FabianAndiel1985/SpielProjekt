@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; }
+
+main {
+  display: flex;
+  justify-content: center;
+  /*Ending big container in main*/ }
+  main #pointsDistributionContainer {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 50%; }
+    main #pointsDistributionContainer #text-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%; }
+      main #pointsDistributionContainer #text-container ul {
+        list-style-type: none; }
+        main #pointsDistributionContainer #text-container ul li {
+          height: 36.95px;
+          margin: 8px; }
+    main #pointsDistributionContainer #points-container {
+      width: 50%; }
+      main #pointsDistributionContainer #points-container ul {
+        list-style-type: none; }
+        main #pointsDistributionContainer #points-container ul li {
+          margin: 8px; }
+
+/*Endning Main*/
+section {
+  margin-top: 20px; }
+  section #section-line1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  section #section-line2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+
+/*Endning Section*/
+
+/*# sourceMappingURL=styleHeroChoose.css.map */

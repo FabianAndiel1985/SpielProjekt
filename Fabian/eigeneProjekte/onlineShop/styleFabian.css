@@ -1,0 +1,75 @@
+#headerContainer {
+  border: 1px solid black;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  #headerContainer header {
+    border: 1px solid black;
+    height: 10%;
+    width: 90%; }
+    #headerContainer header #header-line-first {
+      display: flex;
+      justify-content: space-between; }
+      #headerContainer header #header-line-first img {
+        width: 30px; }
+      #headerContainer header #header-line-first #header-line-first-navbar {
+        display: flex;
+        align-items: flex-end; }
+      #headerContainer header #header-line-first ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+      #headerContainer header #header-line-first li {
+        float: left; }
+      #headerContainer header #header-line-first li a {
+        display: block;
+        padding: 8px;
+        text-decoration: none; }
+    #headerContainer header #header-line-second {
+      border: 1px solid black;
+      height: 10%;
+      display: flex;
+      justify-content: space-between; }
+      #headerContainer header #header-line-second ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+      #headerContainer header #header-line-second li {
+        float: left; }
+      #headerContainer header #header-line-second li a {
+        display: block;
+        padding: 8px;
+        text-decoration: none; }
+      #headerContainer header #header-line-second #header-line-two-navbar {
+        display: flex;
+        align-items: flex-end; }
+
+#main-Container #main-Container-line-one {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 5px; }
+  #main-Container #main-Container-line-one .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%; }
+  #main-Container #main-Container-line-one .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  #main-Container #main-Container-line-one .container {
+    padding: 2px 16px; }
+#main-Container #main-Container-line-two {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 5px; }
+  #main-Container #main-Container-line-two .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%; }
+  #main-Container #main-Container-line-two .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  #main-Container #main-Container-line-two .container {
+    padding: 2px 16px; }
+
+/*# sourceMappingURL=styleFabian.css.map */

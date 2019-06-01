@@ -1,0 +1,35 @@
+body {
+
+}
+
+input {
+	display:block;
+}
+
+/*button {
+	display:block;
+}*/
+
+#Sc4 {
+	text-align:center;
+}
+
+#contentSc4 {
+	text-align:center;
+}
+
+#workoutroom, #magican {
+	width: 20%;
+	height:auto;
+}
+
+/*Settings for Scene 5 and Scene 6*/
+
+#sc5container, #sc6container {
+	text-align: center;
+}
+
+#sc6opponent {
+	width: 30%;
+	height: auto;
+}

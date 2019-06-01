@@ -1,0 +1,249 @@
+// Start Media Queries
+
+
+@media screen and (max-width: 600px) {
+  body {
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+		margin-top:80px;
+	}
+
+	main {
+		margin-top:80px;
+
+		#main-line0 {
+			display:flex;
+			justify-content: center;
+			margin-bottom:100px;
+			margin-top: -200px;
+			height:2%;
+			blockquote.bubble { 
+			  margin-left:105px;
+			 
+			}
+
+			blockquote.speech {
+			  background:none ; 
+			  width: 300px;
+			  font-size: 30px;
+			  font-style: italic;
+			  #quoteOrigin {
+			  	margin-top:7px;
+		  		display:block;
+		  		font-size: 20px;
+			  	font-style: normal;
+			  	font-weight:bold;
+		  		}
+			}
+		}
+
+		#main-line1 {
+			margin:20px;
+			flex-direction: column;
+			align-items: center;
+			
+			#card-Fabian-vita-container {
+			display:flex;
+			justify-content: center;
+			
+
+			.card-Fabian-vita {
+				box-shadow: 100px 35px 30px 0 rgba(0,0,0,0.3);
+			  	max-width:227px;
+			  	border-radius: 5px;
+			  	margin-bottom: 70px;
+			 	border:1px solid black;
+			 	margin-left:50px;
+			  	  	
+			}
+
+
+			}
+		}
+
+	}
+  }
+}
+
+// _______________________________________________________________________________________ 
+
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
+    body {
+        // background-color: deepskyblue;
+    }
+	
+	main {
+
+		#main-line0 {
+			// background-color: yellow;
+			display:flex;
+			justify-content: center;
+
+			blockquote.bubble { 
+			  margin-left:270px;
+			  
+			  			}
+
+			blockquote.speech {
+			  background:none;
+			  // width: 300px;					Coach why isn`t this working: I want the quote exactly above my head like in the query max width-600px
+			  font-size: 30px;
+			  font-style: italic;
+			  #quoteOrigin {
+			  	margin-top:7px;
+		  		display:block;
+		  		font-size: 20px;
+			  	font-style: normal;
+			  	font-weight:bold;
+		  		}
+			}
+		}
+
+
+		#main-line1 {
+			margin:20px;
+			flex-direction: column;
+			align-items: center;
+
+			#card-Fabian-vita-container {
+				display:flex;
+				justify-content: center;
+				margin-left: 50px;
+			
+				
+				.card-Fabian-vita {
+					box-shadow: 100px 35px 30px 0 rgba(0,0,0,0.3);
+				  	max-width:227px;
+				  	border-radius: 5px;
+				  	margin-bottom: 70px;
+				 	border:1px solid black;
+				 	
+			}
+
+		}
+
+	}
+
+}	
+
+
+}
+
+// _______________________________ENDING_____________________________________________
+
+
+
+
+header {
+	display: flex;
+	justify-content: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;
+
+	#headerContainer:hover {
+		transform: rotate(360deg);
+		transition: 3s;
+	}
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Indie Flower', cursive;
+	text-decoration: none;
+	font-size: 30px;
+	height:30px;
+	margin-top: 40px;
+
+	.navbar-item a {
+		text-decoration: none;
+	}
+}
+
+
+main {
+
+	margin-top:-160px;
+	
+	#main-line0 {
+		
+		blockquote.bubble { 
+		  background-position: center;
+		  background-repeat: no-repeat !important;
+		  background-size: 50% 50%;
+		  text-align: center;
+		  // box-sizing: content-box;
+		  line-height: 1;
+		  position:relative;
+		  left:-40px;
+		  top:200px;
+
+		}
+
+		blockquote.speech {
+		  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+		  width: 700px;
+		  font-size: 30px;
+		  padding-top: 8%;
+		  padding-bottom: 20%;
+		  #quoteOrigin {
+		  	display:none;
+		  }
+		}
+
+
+		}
+
+	#main-line1 {
+		 
+		display: flex; 
+		justify-content: space-between;
+
+	// Fabian card
+		.card-Fabian {
+			  box-shadow: 100px 35px 30px 0 rgba(0,0,0,0.3);
+			  width: 250px;
+			  border-radius: 5px;
+			  margin-bottom: 70px;
+			  // flex-grow:1;
+			}
+
+	// end Fabian card
+
+		#card-Fabian-vita-container {
+			width:60%;
+			margin-right: 70px;
+
+			.card-Fabian-vita {
+				width:80%;
+				box-shadow: 100px 35px 30px 0 rgba(0,0,0,0.3);
+			  	width: 750px;
+			  	border-radius: 5px;
+			  	margin-bottom: 70px;
+			 	border:1px solid black;
+			  	// flex-grow: 1;
+
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+// ___________________________old stuff ______________________________________
+// Old stuff: 
+
+// .card-Fabian:hover  {
+// 			box-shadow: 110px 40px 35px 0 silver;
+// 			width:300px;
+// 			transition-duration: 4s;
+// 		}
+
+

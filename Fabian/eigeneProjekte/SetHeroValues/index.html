@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Import Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- external CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styleHeroChoose.css">
+
+
+	<!-- Import Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<title></title>
+</head>
+<body>
+
+
+	<header>
+		<h1>Create your hero</h1>
+		<br>
+		<br>
+		<p> Distribiute your points: <span id="distributePoints"> 40 </span> points </p>
+	</header>	
+	
+	<nav>
+		<div>Your hero`s name <input type="text" name="name" id="heroName"></div>
+	</nav>
+
+	<main>
+		<div id="pointsDistributionContainer">
+
+			<div id="text-container">
+				<ul>
+					<li>
+						Your hero`s power is <span id="powerValue">	0 </span> points 
+					</li>
+
+					<li>
+						Your hero`s endurance is <span id="enduranceValue">	0 </span> points
+					</li>
+
+					<li>
+						Your hero`s lives is <span id="liveValue">	0 </span> points
+					</li>
+				</ul>	
+			</div>
+
+			<div id="points-container">
+				<ul>
+					<li>
+						<button type="button" class="btn btn-success plusButton" value="power"> + </button>
+						
+						<button type="button" class="btn btn-success minusButton" value="power"> - </button>
+					</li>
+
+					<li>
+						<button type="button" class="btn btn-success plusButton" value="endurance"> + </button>
+						<button type="button" class="btn btn-success minusButton" value="endurance"> - </button>			
+					</li>
+
+					<li>
+						<button type="button" class="btn btn-success plusButton" value="live" > + </button>
+						<button type="button" class="btn btn-success minusButton" value="live"> - </button>	
+					</li>
+				</ul>	
+			</div>
+		</div>	
+
+
+		
+
+	</main>
+
+	<section>
+		<div id="section-line1">
+			<button type="button" class="btn btn-primary btn-lg" id="createMainCharacter">
+				Create your hero
+			</button>
+		</div>
+		<div id="section-line2">
+			<img src="hero1.jpg" id="hero1">
+			<img src="hero2.jpg" id="hero2">
+			<img src="hero3.jpg" id="hero3">
+		</div>
+
+	</section>
+
+	<script type="text/javascript" src= js/scriptHeroChoose.js>
+		
+	</script>
+
+</body>
+</html>
